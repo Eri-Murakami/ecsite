@@ -1,18 +1,20 @@
 package com.diworksdev.ecsite.action;
 
-import com.opensymphony.xwork2.ActionSupport;
-import org.apache.struts2.interceptor.SessionAware;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Map;
+
+import org.apache.struts2.interceptor.SessionAware;
+
 import com.diworksdev.ecsite.dao.MyPageDAO;
 import com.diworksdev.ecsite.dto.MyPageDTO;
+import com.opensymphony.xwork2.ActionSupport;
 
 public class MyPageAction extends ActionSupport implements SessionAware {
 	public Map<String, Object> session;
 	private MyPageDAO myPageDAO = new MyPageDAO();
 	private ArrayList<MyPageDTO> myPageList = new ArrayList<MyPageDTO>();
-	private String deleteFig;
+	private String deleteFlg;
 	private String message;
 	
 	public String execute() throws SQLException {
@@ -38,7 +40,7 @@ public class MyPageAction extends ActionSupport implements SessionAware {
 		
 		if(res > 0) {
 			myPageList = null;
-			setmessage("商品情報を正しく削除しました。");
+			setMessage("商品情報を正しく削除しました。");
 		}else if(res == 0) {
 			setMessage("商品情報の削除に失敗しました。");
 		}
@@ -52,7 +54,7 @@ public class MyPageAction extends ActionSupport implements SessionAware {
 		this.session = session;
 	}
 	public ArrayList<MyPageDTO> getMyPageList(){
-		return this,myPageList;
+		return this.myPageList;
 	}
 	public String getMessage() {
 		return this.message;

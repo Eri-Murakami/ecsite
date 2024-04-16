@@ -9,7 +9,7 @@
 <constant name="struts.devMode" value="true"/>
 
 <!-- 対象のpackageを設定 -->
-<package name="com.diworksdev.template.action" extends="struts-default">
+<package name="com.diworksdev.ecsite.action" extends="struts-default">
 
 
 <!-- GoHomeAction -->
