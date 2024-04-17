@@ -9,7 +9,7 @@
 <meta http-equiv="Content-Script-Type" content="text/javascript"/>
 <meta http-equiv="imagetoolbar" content="no"/>
 <meta name="description" content=""/>
-<mate name="keywords" content=""/>
+<mete name="keywords" content=""/>
 
 <title>Home画面</title>
 <style type="text/css">
@@ -78,9 +78,9 @@ text-align: center;
 <s:form action="HomeAction">
 <s:submit value="商品購入"/>
 </s:form>
-<s:if test="#session.login_user_id !=null">
+<s:if test=”#session. login_user_id != null”>
 <p>ログアウトする場合は
-<a href='<s:url action="LoginAction"/>'>こちら</a></p>
+<a href='<s:url action="LogoutAction"/>'>こちら</a></p>
 </s:if>
 </div>
 </div>
