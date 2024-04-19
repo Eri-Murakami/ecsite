@@ -21,7 +21,6 @@ public class HomeAction extends ActionSupport implements SessionAware {
 			session.put("buyItem_price", buyItemDTO.getItemPrice());
 			
 			result = SUCCESS;
-			return result;
 		}
 		return result;
 }
