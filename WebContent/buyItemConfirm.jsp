@@ -27,12 +27,18 @@
 			}
 			
 			table {
+				text-align: center;
+				margin: 0 auto;
+			}
+				/* ======== ecsite LAYOUT  ======== */
+			
+			#top {
 				width: 780px;
 				margin: 30px auto;
 				border: 1px solid #333;
 			}
 			
-			/* ======== ecsite LAYOUT  ======== */
+		
 			#header {
 				width: 100%;
 				height: 80px;

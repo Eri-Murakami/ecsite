@@ -50,7 +50,7 @@
 			}
 			
 			#footer {
-				width: 100px;
+				width: 100%;
 				height: 80px;
 				background-color: black;
 				clear: both;
@@ -110,6 +110,7 @@
 				
 				<div id="text-right">
 					<p>Homeへ戻る場合は<a href='<s:url action="GoHomeAction"/>'>こちら</a></p>
+					<p>ログアウトする場合は<a href='<s:url action="LogoutAction"/>'>こちら</a></p>
 				</div>
 			</div>
 		</div>

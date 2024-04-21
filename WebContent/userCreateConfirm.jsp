@@ -47,14 +47,14 @@
 			#main {
 				width: 100%;
 				height: 500px;
-				text-algin: center;
+				text-align: center;
 			}
-			
+				
 			#footer {
 				width: 100%;
 				height: 80px;
 				background-color:black;
-				clear:both;
+				clear: both;
 			}
 		
 		</style>
@@ -74,7 +74,7 @@
 			<div>
 				<h3>登録する内容は以下でよろしいですか。</h3>
 				<table>
-					<s:form action="userCreateCompleteAction">
+					<s:form action="UserCreateCompleteAction">
 						<tr id="box">
 							<td>
 								<label>ログインID:</label>
@@ -89,7 +89,7 @@
 								<label>ログインPASS:</label>
 							</td>
 							<td>
-								<s:property value="loginPAssword" escape="false"/>
+								<s:property value="loginPassword" escape="false"/>
 							</td>
 						</tr>
 						<tr id="box">

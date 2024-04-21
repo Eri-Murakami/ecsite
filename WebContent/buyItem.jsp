@@ -73,7 +73,7 @@
 				<p>BuyItem</p>
 			</div>
 			<div>
-				<s:form action ="BuyITemAction">
+				<s:form action ="BuyItemAction">
 					<table>
 						<tr>
 							<td>
@@ -89,8 +89,7 @@
 							<span>値段</span>
 						</td>
 					<td>
-						<s:property value="session.buyITem_price"/>
-						<span>円</span>
+						<s:property value="session.buyItem_price" /><span>円</span>
 					</td>
 					</tr>
 					
@@ -129,7 +128,7 @@
 				</s:form>
 				
 				<div>
-					<p>前画面に戻る場合は<a href='<s:url action="GoHomection"/>'>こちら</a></p>
+					<p>前画面に戻る場合は<a href='<s:url action="GoHomeAction"/>'>こちら</a></p>
 					<p>マイページは<a href='<s:url action="MyPageAction"/>'>こちら</a></p>
 				</div>
 			</div>
