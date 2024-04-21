@@ -59,12 +59,12 @@
 			}
 			
 		</style>
-		<scriipt type="text/javascript">
+		<script type="text/javascript">
 			function submitAction(url) {
 				$('form').attr('action', url);
 				$('form').submit();	
 			}		
-		</scriipt>
+		</script>
 	</head>
 	
 	<body>
